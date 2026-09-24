@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="SurplusToShelter - Connecting surplus food with people who need it.">
+
+    <title>SurplusToShelter | Food Rescue Platform</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <div class="logo">
+                <span class="logo-icon">🥗</span>
+                <span>SurplusToShelter</span>
+            </div>
+
+
+            <nav class="nav-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#how">
+                    How It Works
+                </a>
+
+                <a href="#impact">
+                    Impact
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+            </nav>
+
+
+            <div class="nav-buttons">
+
+                <button
+                    class="login-btn"
+                    onclick="openLogin()">
+
+                    Login
+
+                </button>
+
+
+                <button
+                    class="signup-btn"
+                    onclick="openRegister()">
+
+                    Sign Up
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         HERO SECTION
+    ====================================================== -->
+
+    <section
+        id="home"
+        class="hero">
+
+        <div class="hero-container">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    🌱 Reduce Food Waste • Feed Communities
+                </div>
+
+
+                <h1>
+                    Turning Surplus Food
+                    <span>Into Hope.</span>
+                </h1>
+
+
+                <p>
+
+                    SurplusToShelter connects food donors,
+                    community shelters and volunteer drivers
+                    to make sure surplus food reaches people
+                    who need it.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="primary-btn"
+                        onclick="openDonation()">
+
+                        Donate Food →
+
+                    </button>
+
+
+                    <button
+                        class="secondary-btn"
+                        onclick="scrollToSection('how')">
+
+                        How It Works
+
+                    </button>
+
+                </div>
+
+
+                <!-- HERO STATS -->
+
+                <div class="hero-stats">
+
+                    <div class="hero-stat">
+
+                        <strong id="heroFood">
+                            0 KG
+                        </strong>
+
+                        <span>
+                            Food Rescued
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-stat">
+
+                        <strong id="heroMeals">
+                            0
+                        </strong>
+
+                        <span>
+                            Meals Supported
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-stat">
+
+                        <strong id="heroDeliveries">
+                            0
+                        </strong>
+
+                        <span>
+                            Deliveries
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual">
+
+                <div class="hero-circle">
+
+                    <div class="food-icon">
+                        🍲
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-one">
+
+                    <span>🍱</span>
+
+                    <div>
+                        <strong>
+                            Food Saved
+                        </strong>
+
+                        <small>
+                            From going to waste
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-two">
+
+                    <span>🤝</span>
+
+                    <div>
+                        <strong>
+                            Community
+                        </strong>
+
+                        <small>
+                            Helping each other
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FEATURES
+    ====================================================== -->
+
+    <section class="features-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <span>
+                    WHY SURPLUSTOSHELTER?
+                </span>
+
+                <h2>
+                    From Extra Food to
+                    <span>Extra Hope</span>
+                </h2>
+
+                <p>
+                    A simple technology platform that makes
+                    food rescue faster, smarter and more transparent.
+                </p>
+
+            </div>
+
+
+            <div class="features-grid">
+
+
+                <!-- FEATURE 1 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📦
+                    </div>
+
+                    <h3>
+                        Easy Food Donation
+                    </h3>
+
+                    <p>
+                        Donors can quickly post surplus food,
+                        quantity, location and expiry information.
+                    </p>
+
+                </div>
+
+
+                <!-- FEATURE 2 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🤖
+                    </div>
+
+                    <h3>
+                        Smart Matching
+                    </h3>
+
+                    <p>
+                        Donations can be matched with suitable
+                        community shelters and recipients.
+                    </p>
+
+                </div>
+
+
+                <!-- FEATURE 3 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🚚
+                    </div>
+
+                    <h3>
+                        Volunteer Delivery
+                    </h3>
+
+                    <p>
+                        Volunteer drivers help move rescued food
+                        from donors to shelters.
+                    </p>
+
+                </div>
+
+
+                <!-- FEATURE 4 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        Impact Tracking
+                    </h3>
+
+                    <p>
+                        Track rescued food, meals supported and
+                        successful deliveries.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         HOW IT WORKS
+    ====================================================== -->
+
+    <section
+        id="how"
+        class="common-section how-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <span>
+                    SIMPLE PROCESS
+                </span>
+
+                <h2>
+                    How It Works
+                </h2>
+
+                <p>
+                    Four simple steps can turn surplus food
+                    into meaningful community impact.
+                </p>
+
+            </div>
+
+
+            <div class="steps-grid">
+
+
+                <!-- STEP 1 -->
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div class="step-icon">
+                        📱
+                    </div>
+
+                    <h3>
+                        Post Donation
+                    </h3>
+
+                    <p>
+                        Donor enters food details,
+                        quantity, location and expiry time.
+                    </p>
+
+                </div>
+
+
+                <!-- STEP 2 -->
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div class="step-icon">
+                        🎯
+                    </div>
+
+                    <h3>
+                        Smart Match
+                    </h3>
+
+                    <p>
+                        The platform identifies a suitable
+                        recipient for the donation.
+                    </p>
+
+                </div>
+
+
+                <!-- STEP 3 -->
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div class="step-icon">
+                        🚗
+                    </div>
+
+                    <h3>
+                        Pickup
+                    </h3>
+
+                    <p>
+                        A volunteer driver can collect the
+                        food from the donor.
+                    </p>
+
+                </div>
+
+
+                <!-- STEP 4 -->
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        04
+                    </div>
+
+                    <div class="step-icon">
+                        ❤️
+                    </div>
+
+                    <h3>
+                        Delivery
+                    </h3>
+
+                    <p>
+                        Food reaches the community shelter
+                        and the delivery status is updated.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         DASHBOARD
+    ====================================================== -->
+
+    <section
+        id="dashboard"
+        class="dashboard-section">
+
+        <div class="dashboard-wrapper">
+
+
+            <!-- SIDEBAR -->
+
+            <aside class="dashboard-sidebar">
+
+                <div class="dashboard-logo">
+
+                    <span>
+                        🥗
+                    </span>
+
+                    <h3>
+                        SurplusToShelter
+                    </h3>
+
+                </div>
+
+
+                <div class="sidebar-menu">
+
+                    <button
+                        class="dash-link active"
+                        onclick="showDashboard('overview', this)">
+
+                        📊
+                        <span>
+                            Overview
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="dash-link"
+                        onclick="showDashboard('donations', this)">
+
+                        🍱
+                        <span>
+                            Donations
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="dash-link"
+                        onclick="showDashboard('matches', this)">
+
+                        🎯
+                        <span>
+                            Smart Matches
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="dash-link"
+                        onclick="showDashboard('pickup', this)">
+
+                        🚚
+                        <span>
+                            Pickup Routes
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="dash-link"
+                        onclick="showDashboard('impact', this)">
+
+                        🌱
+                        <span>
+                            Impact
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </aside>
+
+
+            <!-- DASHBOARD MAIN -->
+
+            <main class="dashboard-main">
+
+                <div
+                    id="dashboardContent"
+                    class="dashboard-content">
+
+
+                    <!-- DASHBOARD HEADER -->
+
+                    <div class="dashboard-header">
+
+                        <div>
+
+                            <span class="dashboard-label">
+                                DASHBOARD
+                            </span>
+
+                            <h2>
+                                Overview
+                            </h2>
+
+                            <p>
+                                Monitor food rescue activities
+                                and community impact.
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            class="primary-btn"
+                            onclick="openDonation()">
+
+                            + Donate Food
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- STAT CARDS -->
+
+                    <div class="dashboard-grid">
+
+
+                        <!-- FOOD RESCUED -->
+
+                        <div class="dashboard-card">
+
+                            <div class="dashboard-card-icon">
+                                🍱
+                            </div>
+
+                            <h3 id="foodRescued">
+                                0 KG
+                            </h3>
+
+                            <p>
+                                Food Rescued
+                            </p>
+
+                            <span class="card-subtext">
+                                Total surplus saved
+                            </span>
+
+                        </div>
+
+
+                        <!-- MEALS -->
+
+                        <div class="dashboard-card">
+
+                            <div class="dashboard-card-icon">
+                                🍲
+                            </div>
+
+                            <h3 id="mealsRescued">
+                                0
+                            </h3>
+
+                            <p>
+                                Meals Supported
+                            </p>
+
+                            <span class="card-subtext">
+                                Estimated meals
+                            </span>
+
+                        </div>
+
+
+                        <!-- ACTIVE -->
+
+                        <div class="dashboard-card">
+
+                            <div class="dashboard-card-icon">
+                                📦
+                            </div>
+
+                            <h3 id="activeDonations">
+                                0
+                            </h3>
+
+                            <p>
+                                Active Donations
+                            </p>
+
+                            <span class="card-subtext">
+                                Currently active
+                            </span>
+
+                        </div>
+
+
+                        <!-- DELIVERIES -->
+
+                        <div class="dashboard-card">
+
+                            <div class="dashboard-card-icon">
+                                🚚
+                            </div>
+
+                            <h3 id="totalDeliveries">
+                                0
+                            </h3>
+
+                            <p>
+                                Deliveries
+                            </p>
+
+                            <span class="card-subtext">
+                                Successfully delivered
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RECENT ACTIVITY -->
+
+                    <div class="dashboard-panels">
+
+                        <div class="dashboard-panel">
+
+                            <div class="panel-header">
+
+                                <div>
+
+                                    <h3>
+                                        Recent Donations
+                                    </h3>
+
+                                    <p>
+                                        Latest food rescue activities
+                                    </p>
+
+                                </div>
+
+
+                                <button
+                                    onclick="showDashboard('donations')"
+                                    class="text-btn">
+
+                                    View All
+
+                                </button>
+
+                            </div>
+
+
+                            <div id="recentDonations">
+
+                                <p class="empty-message">
+                                    Loading donations...
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- EXPIRING SOON -->
+
+                        <div class="dashboard-panel">
+
+                            <div class="panel-header">
+
+                                <div>
+
+                                    <h3>
+                                        Food Safety
+                                    </h3>
+
+                                    <p>
+                                        Important donation information
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="safety-box">
+
+                                <div class="safety-icon">
+                                    ⏱️
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Check expiry time
+                                    </strong>
+
+                                    <p>
+                                        Always provide an accurate
+                                        expiry time when posting food.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="safety-box">
+
+                                <div class="safety-icon">
+                                    🧊
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Store safely
+                                    </strong>
+
+                                    <p>
+                                        Keep food properly stored
+                                        before pickup.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         IMPACT SECTION
+    ====================================================== -->
+
+    <section
+        id="impact"
+        class="common-section impact-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <span>
+                    OUR IMPACT
+                </span>
+
+                <h2>
+                    Every Donation
+                    <span>Makes a Difference</span>
+                </h2>
+
+                <p>
+                    Food that could have been wasted can instead
+                    support people and communities.
+                </p>
+
+            </div>
+
+
+            <div class="impact-grid">
+
+
+                <div class="impact-card">
+
+                    <div class="impact-icon">
+                        🌾
+                    </div>
+
+                    <h3 id="impactFood">
+                        0 KG
+                    </h3>
+
+                    <p>
+                        Food Rescued
+                    </p>
+
+                </div>
+
+
+                <div class="impact-card">
+
+                    <div class="impact-icon">
+                        🍽️
+                    </div>
+
+                    <h3 id="impactMeals">
+                        0
+                    </h3>
+
+                    <p>
+                        Meals Supported
+                    </p>
+
+                </div>
+
+
+                <div class="impact-card">
+
+                    <div class="impact-icon">
+                        🚚
+                    </div>
+
+                    <h3 id="impactDeliveries">
+                        0
+                    </h3>
+
+                    <p>
+                        Deliveries Completed
+                    </p>
+
+                </div>
+
+
+                <div class="impact-card">
+
+                    <div class="impact-icon">
+                        🤝
+                    </div>
+
+                    <h3>
+                        Community
+                    </h3>
+
+                    <p>
+                        Connected for Good
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section
+        id="about"
+        class="common-section about-section">
+
+        <div class="section-container">
+
+            <div class="about-grid">
+
+
+                <div class="about-content">
+
+                    <span class="section-label">
+                        ABOUT THE PROJECT
+                    </span>
+
+                    <h2>
+                        Technology That
+                        <span>Connects People</span>
+                    </h2>
+
+                    <p>
+
+                        SurplusToShelter is a food rescue platform
+                        designed to connect people and organizations
+                        that have surplus food with shelters and
+                        communities that can use it.
+
+                    </p>
+
+
+                    <p>
+
+                        Instead of allowing usable food to become
+                        waste, the platform creates a simple digital
+                        flow from donation to delivery.
+
+                    </p>
+
+
+                    <div class="about-points">
+
+                        <div>
+                            ✓ Easy donation process
+                        </div>
+
+                        <div>
+                            ✓ Smart recipient matching
+                        </div>
+
+                        <div>
+                            ✓ Volunteer pickup coordination
+                        </div>
+
+                        <div>
+                            ✓ Transparent impact tracking
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-visual">
+
+                    <div class="about-circle">
+
+                        <div class="about-emoji">
+                            🌱
+                        </div>
+
+                        <strong>
+                            Rescue.
+                            <br>
+                            Connect.
+                            <br>
+                            Deliver.
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <div class="logo">
+
+                    <span class="logo-icon">
+                        🥗
+                    </span>
+
+                    <span>
+                        SurplusToShelter
+                    </span>
+
+                </div>
+
+
+                <p>
+                    Turning surplus food into hope,
+                    one donation at a time.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    Platform
+                </h4>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#how">
+                    How It Works
+                </a>
+
+                <a href="#impact">
+                    Impact
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    Get Involved
+                </h4>
+
+                <a
+                    href="#"
+                    onclick="openDonation(); return false;">
+
+                    Donate Food
+
+                </a>
+
+                <a
+                    href="#"
+                    onclick="openRegister(); return false;">
+
+                    Become a Partner
+
+                </a>
+
+                <a
+                    href="#"
+                    onclick="openRegister(); return false;">
+
+                    Volunteer
+
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <a href="mailto:hello@surplustoshelter.com">
+                    ✉ hello@surplustoshelter.com
+                </a>
+
+                <span>
+                    📍 India
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 SurplusToShelter.
+                Built for a better tomorrow.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         DONATION MODAL
+    ====================================================== -->
+
+    <div
+        id="donationModal"
+        class="modal">
+
+
+        <div class="modal-content">
+
+
+            <button
+                class="modal-close"
+                onclick="closeDonation()">
+
+                ×
+
+            </button>
+
+
+            <div class="modal-header">
+
+                <div class="modal-icon">
+                    🍱
+                </div>
+
+                <h2>
+                    Donate Surplus Food
+                </h2>
+
+                <p>
+                    Help turn your extra food into someone's meal.
+                </p>
+
+            </div>
+
+
+            <form
+                id="donationForm"
+                onsubmit="submitDonation(event)">
+
+
+                <!-- FOOD NAME -->
+
+                <div class="form-group">
+
+                    <label for="foodName">
+                        Food Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="foodName"
+                        placeholder="Example: Cooked Rice"
+                        required>
+
+                </div>
+
+
+                <!-- QUANTITY -->
+
+                <div class="form-group">
+
+                    <label for="foodQuantity">
+                        Quantity (KG)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="foodQuantity"
+                        min="0.1"
+                        step="0.1"
+                        placeholder="Example: 10"
+                        required>
+
+                </div>
+
+
+                <!-- LOCATION -->
+
+                <div class="form-group">
+
+                    <label for="foodLocation">
+                        Pickup Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="foodLocation"
+                        placeholder="Example: Jaipur, Rajasthan"
+                        required>
+
+                </div>
+
+
+                <!-- EXPIRY -->
+
+                <div class="form-group">
+
+                    <label for="expiryTime">
+                        Expiry / Best Before
+                    </label>
+
+                    <input
+                        type="datetime-local"
+                        id="expiryTime"
+                        required>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="modal-submit">
+
+                    Post Food Donation
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         LOGIN MODAL
+    ====================================================== -->
+
+    <div
+        id="loginModal"
+        class="modal">
+
+
+        <div class="modal-content">
+
+
+            <button
+                class="modal-close"
+                onclick="closeLogin()">
+
+                ×
+
+            </button>
+
+
+            <div class="modal-header">
+
+                <div class="modal-icon">
+                    👋
+                </div>
+
+                <h2>
+                    Welcome Back
+                </h2>
+
+                <p>
+                    Login to your SurplusToShelter account.
+                </p>
+
+            </div>
+
+
+            <form
+                id="loginForm"
+                onsubmit="loginUser(event)">
+
+
+                <div class="form-group">
+
+                    <label for="loginEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="you@example.com"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter password"
+                        required>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="modal-submit">
+
+                    Login
+
+                </button>
+
+
+                <p class="switch-text">
+
+                    Don't have an account?
+
+                    <button
+                        type="button"
+                        class="switch-btn"
+                        onclick="switchToRegister()">
+
+                        Create Account
+
+                    </button>
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         REGISTER MODAL
+    ====================================================== -->
+
+    <div
+        id="registerModal"
+        class="modal">
+
+
+        <div class="modal-content">
+
+
+            <button
+                class="modal-close"
+                onclick="closeRegister()">
+
+                ×
+
+            </button>
+
+
+            <div class="modal-header">
+
+                <div class="modal-icon">
+                    🌱
+                </div>
+
+                <h2>
+                    Create Account
+                </h2>
+
+                <p>
+                    Join the food rescue community.
+                </p>
+
+            </div>
+
+
+            <form
+                id="registerForm"
+                onsubmit="registerUser(event)">
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="registerName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="registerName"
+                        placeholder="Enter your name"
+                        required>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="registerEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="you@example.com"
+                        required>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="form-group">
+
+                    <label for="registerPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        placeholder="Create password"
+                        minlength="4"
+                        required>
+
+                </div>
+
+
+                <!-- ROLE -->
+
+                <div class="form-group">
+
+                    <label for="registerRole">
+                        I am a
+                    </label>
+
+                    <select id="registerRole" required>
+
+                        <option value="donor">
+                            Food Donor
+                        </option>
+
+                        <option value="ngo">
+                            NGO / Shelter
+                        </option>
+
+                        <option value="driver">
+                            Volunteer Driver
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="modal-submit">
+
+                    Create Account
+
+                </button>
+
+
+                <p class="switch-text">
+
+                    Already have an account?
+
+                    <button
+                        type="button"
+                        class="switch-btn"
+                        onclick="switchToLogin()">
+
+                        Login
+
+                    </button>
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+<script src="script.js"></script>
+</body>
+</html>
